@@ -748,6 +748,17 @@ header {
   .title-item h2 {
     font-size: 2rem;
   }
+
+
+
+.title-but-product{
+
+bottom: -20%;
+}
+
+
+
+
 }
 
 @media (max-width: 576px) {
