@@ -12,9 +12,6 @@
 body {
   scroll-behavior: smooth;
 
-  /* TO VIDIO  */
-  overflow-x: hidden;
-  /* TO VIDIO  */
 }
 :root {
   --bgHero: #f0f0f2;
@@ -46,7 +43,9 @@ header {
   background-color: #fff;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 99999;
+    box-shadow: 0 10px 15px rgb(25 25 25 / 10%);
+
 }
 
 .header .row {
@@ -196,6 +195,9 @@ header {
   .header label {
     display: block;
     order: 3;
+  }
+  .icon-social i {
+  padding: 0 3px;
   }
 
   .header #menu:checked + nav {
@@ -645,14 +647,10 @@ header {
     text-align: center;
     width: 100%;
     position: absolute;
-    bottom: -13%;
+    bottom: -14%;
     cursor: pointer;
     transition: 0.5s all ease-in-out;
     -webkit-transition: 0.5s all ease-in-out;
-    -moz-transition: 0.5s all ease-in-out;
-    -ms-transition: 0.5s all ease-in-out;
-    -o-transition: 0.5s all ease-in-out;
-    z-index: 999999;
 }
 
 .title-produt:hover .title-but-product {
@@ -860,8 +858,9 @@ bottom: -20%;
 
   position: absolute;
   left: -1%;
-  width: 105%;
+  width: 100%;
   height: 100%;
+  object-fit: cover;
   display: none;
   z-index: 7;
 }
@@ -1222,19 +1221,31 @@ bottom: -20%;
   padding: 5px 10px;
 }
 
-.copy-i .copy-item .coppy-link {
-  color: #222;
 
-  transition: 0.3s all;
-  -webkit-transition: 0.3s all;
-  -moz-transition: 0.3s all;
-  -ms-transition: 0.3s all;
-  -o-transition: 0.3s all;
+
+.copy-i  i {
+
+color: #222;
+ transition: 0.3s all ; -webkit-transition: 0.3s all ; -moz-transition: 0.3s all ; -ms-transition: 0.3s all ; -o-transition: 0.3s all ;
 }
 
-.copy-i .copy-item .coppy-link:hover {
+.copy-i  i:hover { transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -moz-transform: rotateY(180deg); -ms-transform: rotateY(180deg); -o-transform: rotateY(180deg);
   color: var(--hoverText);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 991px) {
   .coppy-wright .row {
